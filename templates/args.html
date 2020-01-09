@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>args</title>
+</head>
+<body>
+
+{{args}}
+
+<table border="1">
+
+{% for (key, value) in args.items() %}
+{% for subvalue in value %}
+	<tr>
+	<td>{{key}}</td>
+	<td>{{subvalue}}</td>
+	</tr>
+{% endfor %}
+{% endfor %}
+
+</table>
+
+
+
+</body>
+</html>
